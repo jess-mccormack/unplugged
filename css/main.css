@@ -100,7 +100,7 @@ textarea {
 
 h1 {
     margin: 0;
-    padding: 30px 15px;
+    padding: 20px 15px;
 }
 
 h2 {
@@ -115,7 +115,7 @@ h3 {
 
 p {
     margin: 0;
-    padding: 0 15px;
+    padding: 10px 15px;
 
 }
 
@@ -124,12 +124,11 @@ a {
 }
 
 address {
-    text-align: center;
 
 }
 
 article {
-    text-align: center;
+
 }
 
 aside {
@@ -225,6 +224,7 @@ footer .footer-content {
 
     margin: 50px 0 0 0;
     width: 60%;
+    text-align: center;
 }
 
 footer p {
@@ -233,6 +233,7 @@ footer p {
 }
 
 address .footer-contact {
+
 
 }
 
@@ -305,6 +306,7 @@ footer .social-icons {
 
 .features-items article {
     padding: 30px 0;
+    text-align: center;
 }
 
 .features p {
@@ -368,6 +370,15 @@ footer .social-icons {
     flex-flow: row wrap;
 }
 
+.about-contact h3 {
+    padding: 20px 0 0 15px;
+
+}
+
+.about-contact p {
+    padding: 0 0 0 15px;
+}
+
 .about-contact-a {
 
 }
@@ -390,17 +401,17 @@ footer .social-icons {
 }
 
 .faq .content-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
+    width: 100%;
+
 }
 
-.questions {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
+.questions article {
+    width: 95%;
+
+}
+
+.questions h3 {
+    padding-left: 15px;
 
 }
 
@@ -493,11 +504,17 @@ footer .social-icons {
    JMC :: MEDIA QUERIES
    ========================================================================== */
 
-@media only screen and (min-width:768px) {
-  /* Style adjustments for viewports that meet the condition */
+/* TABLET STYLES */
+
+@media only screen and (min-width 768px) {
+
 }
 
+/* DESKTOP STYLES */
 
+@media only screen and (min-width 1200px) {
+
+}
 
 /* ==========================================================================
    BOILERPLATE :: PRINT STYLES
