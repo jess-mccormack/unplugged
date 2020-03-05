@@ -99,14 +99,23 @@ textarea {
    ========================================================================== */
 
 h1 {
-
+    margin: 0;
+    padding: 30px 15px;
 }
 
 h2 {
+    margin: 0;
+    padding: 20px 15px;
+}
 
+h3 {
+    margin: 0;
+    padding: 10px 0;
 }
 
 p {
+    margin: 0;
+    padding: 0 15px;
 
 }
 
@@ -115,11 +124,12 @@ a {
 }
 
 address {
+    text-align: center;
 
 }
 
 article {
-
+    text-align: center;
 }
 
 aside {
@@ -150,6 +160,7 @@ footer {
 }
 
 header {
+    padding: 15px 0;
 
 }
 
@@ -158,9 +169,14 @@ header .content-wrapper {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+
+    margin: 0;
+    width: 100%;
 }
 
 .header-divider {
+    width: 100%;
+    padding: 15px 0;
 
 }
 
@@ -169,23 +185,51 @@ header nav {
     justify-content: space-around;
     align-items: center;
     flex-flow: row wrap;
+
+    width: 60%;
 }
 
 header nav ul {
     display: flex;
     justify-content: center;
+
+    margin: 0;
+    padding: 0;
+    width: 50%;
+}
+
+header nav ul li {
+    padding: 0 20px;
+    list-style: none;
 }
 
 footer {
 
 }
 
-footer content-wrapper {
+footer .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
 
+    margin: 0;
+    width: 100%;
 }
 
-.footer-content {
+footer .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
 
+    margin: 50px 0 0 0;
+    width: 60%;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
 }
 
 address .footer-contact {
@@ -196,6 +240,9 @@ footer .social {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-flow: row wrap;
+
+    padding: 20px 0;
 }
 
 footer .social-icons {
@@ -204,7 +251,7 @@ footer .social-icons {
     align-items: center;
 }
 
-footer .copyright {
+.copyright {
 
 }
 
@@ -238,13 +285,30 @@ footer .copyright {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+
+    width: 100%;
 }
 
-.features-items {
+.features .content-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+
+    width: 100%;
+
+}
+
+.features-items {
+    width: 55%;
+}
+
+.features-items article {
+    padding: 30px 0;
+}
+
+.features p {
+    margin: 0;
 }
 
 /* NOTE - add features-icon and features-caption tags, if needed */
@@ -256,6 +320,20 @@ footer .copyright {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+}
+
+/* check when image gets dropped in
+.reviews img {
+    align-items: center;
+}
+*/
+
+.reviews h2 {
+    width: 60%;
+}
+
+.reviews p {
+    width: 90%;
 }
 
 /* ==========================================================================
