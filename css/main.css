@@ -116,19 +116,15 @@ h3 {
 p {
     margin: 0;
     padding: 10px 15px;
-
 }
 
 a {
-
 }
 
 address {
-
 }
 
 article {
-
 }
 
 aside {
@@ -139,11 +135,9 @@ aside {
 }
 
 figure {
-
 }
 
 input {
-
 }
 
 /* ==========================================================================
@@ -168,7 +162,6 @@ header .content-wrapper {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-
     margin: 0;
     width: 100%;
 }
@@ -184,14 +177,12 @@ header nav {
     justify-content: space-around;
     align-items: center;
     flex-flow: row wrap;
-
     width: 60%;
 }
 
 header nav ul {
     display: flex;
     justify-content: center;
-
     margin: 0;
     padding: 0;
     width: 50%;
@@ -203,7 +194,6 @@ header nav ul li {
 }
 
 footer {
-
 }
 
 footer .content-wrapper {
@@ -211,7 +201,6 @@ footer .content-wrapper {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-
     margin: 0;
     width: 100%;
 }
@@ -221,7 +210,6 @@ footer .footer-content {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-
     margin: 50px 0 0 0;
     width: 60%;
     text-align: center;
@@ -233,8 +221,6 @@ footer p {
 }
 
 address .footer-contact {
-
-
 }
 
 footer .social {
@@ -242,7 +228,6 @@ footer .social {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-
     padding: 20px 0;
 }
 
@@ -253,7 +238,6 @@ footer .social-icons {
 }
 
 .copyright {
-
 }
 
 /* ==========================================================================
@@ -272,11 +256,9 @@ footer .social-icons {
 /* HOMEPAGE MAIN FORM ASIDE */
 
 .form-description {
-
 }
 
 .form {
-
 }
 
 /* HOMEPAGE MAIN FEATURES SECTION */
@@ -286,7 +268,6 @@ footer .social-icons {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-
     width: 100%;
 }
 
@@ -295,9 +276,7 @@ footer .social-icons {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-
     width: 100%;
-
 }
 
 .features-items {
@@ -352,13 +331,11 @@ footer .social-icons {
 }
 
 .mission-content {
-
 }
 
 /* ABOUT MAIN MAP SECTION */
 
 .map {
-
 }
 
 /* ABOUT MAIN CONTACT SECTION */
@@ -372,7 +349,6 @@ footer .social-icons {
 
 .about-contact h3 {
     padding: 20px 0 0 15px;
-
 }
 
 .about-contact p {
@@ -380,11 +356,9 @@ footer .social-icons {
 }
 
 .about-contact-a {
-
 }
 
 .about-contact-b {
-
 }
 
 /* ==========================================================================
@@ -402,17 +376,14 @@ footer .social-icons {
 
 .faq .content-wrapper {
     width: 100%;
-
 }
 
 .questions article {
     width: 95%;
-
 }
 
 .questions h3 {
     padding-left: 15px;
-
 }
 
 /* NOTE - Media Queries below Helper classes */
