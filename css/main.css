@@ -8,7 +8,7 @@
  */
 
 /* ==========================================================================
-   Base styles: opinionated defaults
+   BOILERPLATE :: Base styles: opinionated defaults
    ========================================================================== */
 
 html {
@@ -84,7 +84,7 @@ textarea {
 }
 
 /* ==========================================================================
-   Browser Upgrade Prompt
+   BOILERPLATE :: Browser Upgrade Prompt
    ========================================================================== */
 
 .browserupgrade {
@@ -95,11 +95,241 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
+   JMC :: TAG STYLES
    ========================================================================== */
 
+h1 {
+
+}
+
+h2 {
+
+}
+
+p {
+
+}
+
+a {
+
+}
+
+address {
+
+}
+
+article {
+
+}
+
+aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+figure {
+
+}
+
+input {
+
+}
+
 /* ==========================================================================
-   Helper classes
+   JMC :: GLOBAL HEADER & FOOTER
+   ========================================================================== */
+
+header,
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+header {
+
+}
+
+header .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.header-divider {
+
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+
+}
+
+footer content-wrapper {
+
+}
+
+.footer-content {
+
+}
+
+address .footer-contact {
+
+}
+
+footer .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .copyright {
+
+}
+
+/* ==========================================================================
+   JMC :: HOMEPAGE MAIN STYLES
+   ========================================================================== */
+
+/* HOMEPAGE MAIN HERO SECTION */
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+/* HOMEPAGE MAIN FORM ASIDE */
+
+.form-description {
+
+}
+
+.form {
+
+}
+
+/* HOMEPAGE MAIN FEATURES SECTION */
+
+.features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.features-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+/* NOTE - add features-icon and features-caption tags, if needed */
+
+/* HOMEPAGE MAIN REVIEWS SECTION */
+
+.reviews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+/* ==========================================================================
+   JMC :: ABOUT MAIN STYLES
+   ========================================================================== */
+
+/* ABOUT MAIN MISSION SECTION */
+
+.mission {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.mission-content {
+
+}
+
+/* ABOUT MAIN MAP SECTION */
+
+.map {
+
+}
+
+/* ABOUT MAIN CONTACT SECTION */
+
+.about-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.about-contact-a {
+
+}
+
+.about-contact-b {
+
+}
+
+/* ==========================================================================
+   JMC :: FAQ MAIN STYLES
+   ========================================================================== */
+
+/* FAQ MAIN QUESTIONS SECTION */
+
+.faq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.faq .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.questions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+
+}
+
+/* NOTE - Media Queries below Helper classes */
+
+/* ==========================================================================
+   BOILERPLATE :: Helper classes
    ========================================================================== */
 
 /*
@@ -182,27 +412,27 @@ textarea {
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
+   JMC :: MEDIA QUERIES
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width:768px) {
   /* Style adjustments for viewports that meet the condition */
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
+
 
 /* ==========================================================================
-   Print styles.
+   BOILERPLATE :: PRINT STYLES
    Inlined to avoid the additional HTTP request:
    https://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
+
+@media print,
+     (-webkit-min-device-pixel-ratio: 1.25),
+     (min-resolution: 1.25dppx),
+     (min-resolution: 120dpi) {
+     /* Style adjustments for high resolution devices */
+   }
 
 @media print {
   *,
@@ -262,4 +492,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
