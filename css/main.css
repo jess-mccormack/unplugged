@@ -95,43 +95,38 @@ textarea {
 }
 
 /* ==========================================================================
-   JMC :: TAG STYLES
+   JMC :: GLOBAL STYLES
    ========================================================================== */
 
+.content-wrapper {
+    width: 90%;
+    margin: 50px 0;
+}
+
 h1 {
-    margin: 0;
-    padding: 20px 15px;
+
 }
 
 h2 {
-    margin: 0;
-    padding: 20px 15px;
+
 }
 
 h3 {
-    margin: 0;
-    padding: 10px 0;
+
 }
 
 p {
-    margin: 0;
-    padding: 10px 15px;
+
 }
 
 a {
+    text-decoration: none;
 }
 
 address {
 }
 
 article {
-}
-
-aside {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
 }
 
 figure {
@@ -141,7 +136,7 @@ input {
 }
 
 /* ==========================================================================
-   JMC :: GLOBAL HEADER & FOOTER
+   JMC :: HEADER & FOOTER
    ========================================================================== */
 
 header,
@@ -163,12 +158,13 @@ header .content-wrapper {
     align-items: center;
     flex-flow: row wrap;
     margin: 0;
-    width: 100%;
+
 }
 
 .header-divider {
     width: 100%;
-    padding: 15px 0;
+    height: 1px;
+    margin: 10px 0 20px 0;
 
 }
 
@@ -182,10 +178,9 @@ header nav {
 
 header nav ul {
     display: flex;
-    justify-content: center;
-    margin: 0;
+    justify-content: space-around;
     padding: 0;
-    width: 50%;
+    width: 100%;
 }
 
 header nav ul li {
@@ -194,50 +189,39 @@ header nav ul li {
 }
 
 footer {
-}
-
-footer .content-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    margin: 0;
-    width: 100%;
-}
-
-footer .footer-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    margin: 50px 0 0 0;
-    width: 60%;
-    text-align: center;
+    flex-direction: column;
 }
 
 footer p {
     margin: 0;
-    padding: 0;
 }
 
+footer .content-wrapper {
+    margin: 50px 0 0 0;
+    width: 55%;
+}
+
+footer .footer-content {
+    text-align: center;
+}
+
+
 address .footer-contact {
+    margin-bottom: 50px
 }
 
 footer .social {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    padding: 20px 0;
+
 }
 
-footer .social-icons {
+footer .social-icons a {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
-.copyright {
+ footer .copyright {
+    margin: 20px 0;
 }
 
 /* ==========================================================================
@@ -249,11 +233,17 @@ footer .social-icons {
 .hero {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-flow: row wrap;
 }
 
 /* HOMEPAGE MAIN FORM ASIDE */
+
+aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
 
 .form-description {
 }
@@ -266,55 +256,45 @@ footer .social-icons {
 .features {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-flow: row wrap;
-    width: 100%;
 }
 
-.features .content-wrapper {
+.features .features-items {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    width: 100%;
-}
-
-.features-items {
-    width: 55%;
 }
 
 .features-items article {
-    padding: 30px 0;
+    width: 65%;
+    margin: 30px 0;
     text-align: center;
+}
+
+.features h2 {
+    margin: 0 0 60px 0;
 }
 
 .features p {
     margin: 0;
 }
 
-/* NOTE - add features-icon and features-caption tags, if needed */
-
 /* HOMEPAGE MAIN REVIEWS SECTION */
 
 .reviews {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-flow: row wrap;
 }
 
-/* check when image gets dropped in
-.reviews img {
-    align-items: center;
+.reviews h1 {
+    margin: 0 0 40px 0;
 }
-*/
 
 .reviews h2 {
-    width: 60%;
-}
-
-.reviews p {
-    width: 90%;
+    width: 55%;
+    margin: 20px 0;
 }
 
 /* ==========================================================================
@@ -330,7 +310,8 @@ footer .social-icons {
     flex-flow: row wrap;
 }
 
-.mission-content {
+.mission-content p {
+    margin: 0;
 }
 
 /* ABOUT MAIN MAP SECTION */
@@ -340,25 +321,22 @@ footer .social-icons {
 
 /* ABOUT MAIN CONTACT SECTION */
 
-.about-contact {
+.contact-section {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
 }
 
-.about-contact h3 {
-    padding: 20px 0 0 15px;
+.about-contact {
 }
 
 .about-contact p {
-    padding: 0 0 0 15px;
+    margin: 0;
 }
 
-.about-contact-a {
-}
+.about-contact h3 {
 
-.about-contact-b {
 }
 
 /* ==========================================================================
@@ -375,15 +353,24 @@ footer .social-icons {
 }
 
 .faq .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 50px 0 0 0;
     width: 100%;
 }
 
-.questions article {
-    width: 95%;
+.faq h1 {
+    margin: 0 0 22px 15px;
 }
 
 .questions h3 {
-    padding-left: 15px;
+    margin: 0 0 40px 0;
+}
+
+.questions {
+    margin: 0 0 50px 15px;
 }
 
 /* NOTE - Media Queries below Helper classes */
