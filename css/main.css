@@ -95,7 +95,7 @@ textarea {
 }
 
 /* ==========================================================================
-   JMC :: GLOBAL STYLES
+   JMC :: GLOBAL // STYLES
    ========================================================================== */
 
 .content-wrapper {
@@ -136,16 +136,16 @@ input {
 }
 
 /* ==========================================================================
-   JMC :: HEADER & FOOTER
+   JMC :: GLOBAL // HEADER & FOOTER
    ========================================================================== */
 
-header,
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-}
+ header,
+ footer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-flow: row wrap;
+ }
 
 header {
     padding: 15px 0;
@@ -189,46 +189,44 @@ header nav ul li {
 }
 
 footer {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 footer p {
-    margin: 0;
+  margin: 0;
 }
 
 footer .content-wrapper {
-    margin: 50px 0 0 0;
-    width: 55%;
+  width: 55%;
+  margin: 50px 0;
 }
 
-footer .footer-content {
-    text-align: center;
+footer .contact {
+  margin-bottom: 50px;
 }
 
-
-address .footer-contact {
-    margin-bottom: 50px
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-footer .social {
-
+footer .social-icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-footer .social-icons a {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+footer .copyright {
+  margin: 20px 0;
 }
 
- footer .copyright {
-    margin: 20px 0;
-}
 
 /* ==========================================================================
-   JMC :: HOMEPAGE MAIN STYLES
+   JMC :: HOMEPAGE // MAIN STYLES
    ========================================================================== */
 
-/* HOMEPAGE MAIN HERO SECTION */
+/* HOMEPAGE // MAIN HERO SECTION */
 
 .hero {
     display: flex;
@@ -236,7 +234,7 @@ footer .social-icons a {
     flex-flow: row wrap;
 }
 
-/* HOMEPAGE MAIN FORM ASIDE */
+/* HOMEPAGE // MAIN FORM ASIDE */
 
 aside {
     display: flex;
@@ -251,7 +249,7 @@ aside {
 .form {
 }
 
-/* HOMEPAGE MAIN FEATURES SECTION */
+/* HOMEPAGE // MAIN FEATURES SECTION */
 
 .features {
     display: flex;
@@ -280,7 +278,7 @@ aside {
     margin: 0;
 }
 
-/* HOMEPAGE MAIN REVIEWS SECTION */
+/* HOMEPAGE // MAIN REVIEWS SECTION */
 
 .reviews {
     display: flex;
@@ -298,7 +296,7 @@ aside {
 }
 
 /* ==========================================================================
-   JMC :: ABOUT MAIN STYLES
+   JMC :: ABOUT // MAIN STYLES
    ========================================================================== */
 
 /* ABOUT MAIN MISSION SECTION */
@@ -314,12 +312,12 @@ aside {
     margin: 0;
 }
 
-/* ABOUT MAIN MAP SECTION */
+/* ABOUT // MAIN MAP SECTION */
 
 .map {
 }
 
-/* ABOUT MAIN CONTACT SECTION */
+/* ABOUT // MAIN CONTACT SECTION */
 
 .contact-section {
     display: flex;
@@ -340,10 +338,10 @@ aside {
 }
 
 /* ==========================================================================
-   JMC :: FAQ MAIN STYLES
+   JMC :: FAQ // MAIN STYLES
    ========================================================================== */
 
-/* FAQ MAIN QUESTIONS SECTION */
+/* FAQ // MAIN QUESTIONS SECTION */
 
 .faq {
     display: flex;
@@ -358,18 +356,17 @@ aside {
     align-items: center;
     flex-flow: row wrap;
     margin: 50px 0 0 0;
-    width: 100%;
 }
 
 .faq h1 {
     margin: 0 0 22px 15px;
 }
 
-.questions h3 {
+.faq-content h3 {
     margin: 0 0 40px 0;
 }
 
-.questions {
+.faq-content {
     margin: 0 0 50px 15px;
 }
 
@@ -464,13 +461,148 @@ aside {
 
 /* TABLET STYLES */
 
-@media only screen and (min-width 768px) {
+@media only screen and (min-width: 768px) {
+        /* global // styles */
+        .content-wrapper {
+            max-width: 640px;
+            margin: 100px 0;
+        }
 
+        /* global // header */
+        header {
+            justify-content: space-around;
+            padding: 33px 0;
+        }
+
+        header .content-wrapper {
+            justify-content: space-between;
+            width: 100%
+        }
+
+        .header-divider {
+            display: none;
+        }
+
+        header nav {
+            width: 20%;
+        }
+
+        header nav ul {
+            justify-content: space-between;
+        }
+
+        header nav ul li {
+            padding: 0 10px;
+        }
+
+        /* global // footer */
+        footer .content-wrapper {
+          width: 65%;
+          margin: 50px 0;
+        }
+
+        .footer-content {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-flow: row wrap;
+        }
+
+        footer .contact {
+          margin-bottom: 0;
+        }
+
+        footer .copyright {
+          width: 100%;
+        }
+
+        /* home // aside form */
+        aside .content-wrapper {
+          margin: 40px 0;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        aside .content-wrapper .form-description,
+        aside .content-wrapper .form {
+            width: 40%;
+            margin: 0;
+        }
+
+        /* home // features */
+        .features-items article {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column wrap;
+            flex-basis: 50%;
+        }
+
+        .features-items-text {
+            width: 50%;
+        }
+
+        /* home // reviews */
+        .reviews .review-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .reviews h1 {
+            margin: 0;
+        }
+
+        .review-text {
+            width: 50%;
+        }
+
+        /* about // mission */
+        .mission {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-flow: row wrap;
+        }
+
+        .mission-content {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .mission-content p {
+            margin: 0;
+            width: 47%;
+        }
+
+        /* about // contact */
+        .contact-section .about-contact {
+            display: flex;
+            justify-content: space-between;
+            flex-flow: row wrap;
+            width: 90%;
+        }
+
+        /* faq // contact */
+        .faq .content-wrapper {
+            justify-content: space-between;
+          }
+
+        .faq-content {
+          flex-basis: 45%;
+        }
+
+        .faq h2 {
+          width: 100%;
+        }
+
+/* close tablet settings */
 }
 
 /* DESKTOP STYLES */
 
-@media only screen and (min-width 1200px) {
+@media only screen and (min-width: 1200px) {
 
 }
 
