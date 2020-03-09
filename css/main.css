@@ -199,6 +199,7 @@ footer p {
 footer .content-wrapper {
   width: 55%;
   margin: 50px 0;
+  text-align: center;
 }
 
 footer .contact {
@@ -206,9 +207,9 @@ footer .contact {
 }
 
 footer .social-icons {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 footer .social-icons p {
@@ -590,11 +591,15 @@ aside {
           }
 
         .faq-content {
-          flex-basis: 45%;
+            flex-basis: 40%;
         }
 
         .faq h2 {
-          width: 100%;
+            width: 100%;
+        }
+
+        .faq-content article {
+
         }
 
 /* close tablet settings */
@@ -603,6 +608,43 @@ aside {
 /* DESKTOP STYLES */
 
 @media only screen and (min-width: 1200px) {
+        .content-wrapper {
+            max-width: 960px;
+        }
+
+        .hero h1 {
+            width: 55%;
+        }
+
+        aside .content-wrapper {
+            justify-content: space-around;
+        }
+
+        aside .content-wrapper .form-description
+        aside .content-wrapper .form {
+            width: 40%;
+        }
+
+        .features h2 {
+            width: 90%;
+        }
+
+        .features article {
+            flex-basis: 33%;
+        }
+
+        .mission h1 {
+            width: 90%;
+        }
+
+        .mission .mission-content {
+            width: 90%;
+        }
+
+        .faq h1 {
+            width: 100%;
+        }
+
 
 }
 
