@@ -404,7 +404,20 @@ input[type=button] {
 
 /* ABOUT // MAIN MAP SECTION */
 
-.map {
+.map figure {
+    width: 100%;
+    height: 0;
+    padding-bottom: 80%;
+    overflow: hidden;
+    position: relative;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 /* ABOUT // MAIN CONTACT SECTION */
@@ -705,18 +718,15 @@ input[type=button] {
         /* faq // contact */
         .faq .content-wrapper {
             justify-content: space-between;
-
           }
 
         .faq-content {
-            flex-basis: 45%;
+            width: 50%;
+            flex-wrap: row wrap;
         }
 
         .faq h2 {
             width: 100%;
-        }
-
-        .faq-content article {
         }
 
 /* close tablet settings */
@@ -726,7 +736,7 @@ input[type=button] {
 
 @media only screen and (min-width: 1200px) {
         .content-wrapper {
-            max-width: 950px;
+            max-width: 1000px;
         }
 
         .hero h1 {
