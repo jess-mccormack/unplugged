@@ -251,7 +251,7 @@ footer .footer-contact {
 }
 
 footer .social {
-    padding: 20px 0;
+
 }
 
 footer .social-icons {
@@ -260,10 +260,15 @@ footer .social-icons {
     align-items: center;
 }
 
-footer .social-icons p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+footer .social-icons i {
+  background-color: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3em;
 }
 
 footer .copyright {
@@ -628,6 +633,11 @@ input[type=button] {
           flex-flow: row wrap;
         }
 
+        footer .social {
+          width: 40%;
+
+        }
+
         footer .contact {
           margin-bottom: 0;
         }
@@ -794,6 +804,11 @@ input[type=button] {
 
         .faq h1 {
             width: 100%;
+        }
+
+        footer .social {
+          width: 20%;
+
         }
 
 
