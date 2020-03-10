@@ -105,6 +105,7 @@ html {
  body {
      font-family: 'Open Sans', sans-serif;
      font-size: 1em;
+     font-weight: 400;
  }
 
 .content-wrapper {
@@ -115,20 +116,27 @@ html {
 h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 2em;
+    font-weight: 400;
+    color: #e2e3ed;
 }
 
 h2 {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.5em;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #e2e3ed;
 }
 
 h3 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.25em;
+    font-weight: 400;
+    color: #e2e3ed;
 }
 
 p {
     line-height: 1.25em;
+    color: #e2e3ed;
 
 }
 
@@ -163,6 +171,7 @@ input {
 
 header {
     padding: 15px 0;
+    background-color: #202322;
 
 }
 
@@ -179,6 +188,7 @@ header .content-wrapper {
     width: 100%;
     height: 1px;
     margin: 10px 0 20px 0;
+    border-top: #3a3a3a;
 
 }
 
@@ -200,24 +210,28 @@ header nav ul {
 header nav ul li {
     padding: 0 20px;
     list-style: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.15em;
 }
 
 footer {
-  flex-direction: column;
+    flex-direction: column;
+    background-color: #202322;
 }
 
 footer p {
-  margin: 0;
+    margin: 0;
 }
 
 footer .content-wrapper {
-  width: 55%;
-  margin: 50px 0;
-  text-align: center;
+    width: 55%;
+    margin: 50px 0;
+    text-align: center;
 }
 
 footer .contact {
-  margin-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 footer .social-icons {
@@ -227,13 +241,15 @@ footer .social-icons {
 }
 
 footer .social-icons p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer .copyright {
-  margin: 20px 0;
+    margin: 50px 0 0 0;
+    font-size: .75em;
+
 }
 
 
@@ -256,12 +272,33 @@ aside {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background-color: #527158;
 }
 
-.form-description {
+aside .form {
+  margin-top: 30px;
 }
 
-.form {
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* HOMEPAGE // MAIN FEATURES SECTION */
@@ -299,6 +336,7 @@ aside {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+    background-color: #2a423a;
 }
 
 .reviews h1 {
@@ -321,6 +359,7 @@ aside {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background-color: #527158;
 }
 
 .mission-content p {
@@ -339,6 +378,7 @@ aside {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background-color: #2a423a;
 }
 
 .about-contact {
