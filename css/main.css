@@ -99,38 +99,38 @@ textarea {
    ========================================================================== */
 
 html {
-  font-size: 16px;
+    font-size: 16px;
 }
 
  body {
      font-family: 'Open Sans', sans-serif;
      font-size: 1em;
-     font-weight: 400;
+     font-weight: 300;
  }
 
 .content-wrapper {
     width: 90%;
-    margin: 30px 0;
+    margin: 20px 0;
 }
 
 h1 {
     font-family: 'Poppins', sans-serif;
-    font-size: 2em;
-    font-weight: 400;
+    font-size: 2.25em;
+    font-weight: 300;
     color: #e2e3ed;
 }
 
 h2 {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.2em;
-    font-weight: 400;
+    font-size: 2em;
+    font-weight: 300;
     color: #e2e3ed;
 }
 
 h3 {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.15em;
-    font-weight: 400;
+    font-size: 1.2em;
+    font-weight: 300;
     color: #e2e3ed;
 }
 
@@ -162,14 +162,15 @@ figure {
 }
 
 input {
+
 }
 
 /* ==========================================================================
    JMC :: GLOBAL // HEADER & FOOTER
    ========================================================================== */
 
- header,
- footer {
+header,
+footer {
    display: flex;
    justify-content: center;
    align-items: center;
@@ -177,7 +178,7 @@ input {
  }
 
 header {
-    padding: 15px 0;
+    padding-top: 10px;
     background-color: #202322;
 
 }
@@ -188,6 +189,7 @@ header .content-wrapper {
     align-items: center;
     flex-flow: row wrap;
     margin: 0;
+    width: 100%;
 
 }
 
@@ -197,11 +199,10 @@ header figure {
 }
 
 .header-divider {
-    width: 100%;
-    height: 1px;
-    margin: 10px 0 20px 0;
-    border-top: #3a3a3a;
-
+  background: #3a3a3a;
+  height: 1px;
+  width: 100%;
+  margin: 20px 0 5px 0;
 }
 
 header nav {
@@ -220,16 +221,19 @@ header nav ul {
 }
 
 header nav ul li {
-    padding: 0 20px;
+    padding: 0 50px;
     list-style: none;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.15em;
 }
 
+/* FOOTER */
+
 footer {
     flex-direction: column;
     background-color: #202322;
+    text-align: center;
 }
 
 footer p {
@@ -239,7 +243,6 @@ footer p {
 footer .content-wrapper {
     width: 55%;
     margin: 50px 0;
-    text-align: center;
 }
 
 footer .contact {
@@ -248,10 +251,6 @@ footer .contact {
 
 footer .footer-contact {
     padding: 20px 0;
-}
-
-footer .social {
-
 }
 
 footer .social-icons {
@@ -268,11 +267,11 @@ footer .social-icons i {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.3em;
+  font-size: 1.25em;
 }
 
 footer .copyright {
-    margin: 50px 0 0 0;
+    margin-top: 50px;
     font-size: .75em;
 }
 
@@ -306,6 +305,7 @@ aside {
 }
 
 aside .content-wrapper {
+    padding-bottom: 30px;
 
 }
 
@@ -345,6 +345,11 @@ input[type=button] {
     background-size: cover;
 }
 
+.features h2 {
+    margin: 30px 0;
+    width: 95%;
+}
+
 .features .features-items {
     display: flex;
     justify-content: center;
@@ -364,10 +369,6 @@ input[type=button] {
     text-align: center;
 }
 
-.features h2 {
-    margin: 0 0 60px 0;
-}
-
 .features p {
     margin: 0;
 }
@@ -381,18 +382,19 @@ input[type=button] {
     background-color: #2a423a;
 }
 
-.reviews h1 {
-    margin: 0 0 15px 0;
+.reviews h2 {
+    margin: 15px 0;
     width: 95%;
+    line-height: 1.1em;
 }
 
-.reviews h2 {
+.reviews h3 {
     width: 55%;
     margin: 15px 0;
 }
 
 .reviews p {
-    margin: 0;
+    margin-bottom: 20px;
 }
 
 /* ==========================================================================
@@ -409,8 +411,17 @@ input[type=button] {
     background-color: #527158;
 }
 
+.mission .content-wrapper {
+    padding-bottom: 20px;
+}
+
+.mission h2 {
+    line-height: 1.25em;
+}
+
 .mission-content p {
     margin: 0;
+    font-size: .87em;
 }
 
 /* ABOUT // MAIN MAP SECTION */
@@ -418,7 +429,7 @@ input[type=button] {
 .map figure {
     width: 100%;
     height: 0;
-    padding-bottom: 80%;
+    padding-bottom: 100%;
     overflow: hidden;
     position: relative;
 }
@@ -433,10 +444,6 @@ input[type=button] {
 
 /* ABOUT // MAIN CONTACT SECTION */
 
-.contact-section .content-wrapper {
-
-}
-
 .contact-section {
     display: flex;
     justify-content: center;
@@ -445,15 +452,21 @@ input[type=button] {
     background-color: #2a423a;
 }
 
+.about-contact h2 {
+    margin-top: 30px;
+}
+
 .about-contact {
+    margin-bottom: 30px;
+}
+
+.about-contact h3 {
+    margin: 15px 0 5px 0;
 }
 
 .about-contact p {
     margin: 0;
-}
-
-.about-contact h3 {
-    margin: 30px 0 10px 0;
+    font-size: .87em;
 }
 
 /* ==========================================================================
@@ -492,6 +505,9 @@ input[type=button] {
 }
 
 /* NOTE - Media Queries below Helper classes */
+/* ==========================================================================
+   JMC :: End Baseline Styles
+   ========================================================================== */
 
 /* ==========================================================================
    BOILERPLATE :: Helper classes
@@ -576,262 +592,373 @@ input[type=button] {
   clear: both;
 }
 
+
+
 /* ==========================================================================
    JMC :: MEDIA QUERIES
    ========================================================================== */
 
-/* TABLET STYLES */
+/* ==========================================================================
+  JMC :: TABLET
+  ========================================================================== */
 
 @media only screen and (min-width: 768px) {
-        /* global // styles */
-        .content-wrapper {
-            max-width: 640px;
-            margin: 60px 0;
-        }
 
-        /* global // header */
-        header {
-            justify-content: space-around;
-            padding: 25px 0;
-        }
+/* TABLET // global // styles */
+    .content-wrapper {
+        max-width: 640px;
+        margin: 60px 0;
+    }
 
-        header .content-wrapper {
-            justify-content: space-between;
-            width: 100%
-        }
+/* TABLET // global // header */
+    header {
+        justify-content: space-around;
+        padding: 20px 0;
+    }
 
-        .header-divider {
-            display: none;
-        }
+    header .content-wrapper {
+        justify-content: space-between;
+        width: 100%
+    }
 
-        header figure {
-            width: 30%;
-        }
+    .header-divider {
+        display: none;
+    }
 
-        header nav {
-            width: 20%;
-        }
+    header figure {
+        width: 30%;
+    }
 
-        header nav ul {
-            justify-content: space-between;
-        }
+    header nav {
+        width: 30%;
+    }
 
-        header nav ul li {
-            padding: 0 10px;
-        }
+    header nav ul {
+        justify-content: space-between;
+    }
 
-        /* global // footer */
-        footer .content-wrapper {
-          width: 65%;
-          margin: 50px 0;
-        }
+    header nav ul li {
+        padding: 0 30px;
+    }
 
-        .footer-content {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          flex-flow: row wrap;
-        }
+/* TABLET // home // hero */
+    .hero h1 {
+        width: 70%;
+        font-size: 2.5em;
+        line-height: 1.1em;
+        font-weight: 500;
+    }
 
-        footer .social {
-          width: 40%;
+/* TABLET // home // aside form */
+    aside .content-wrapper {
+        margin: 15px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-        }
+    aside .form-description h3 {
+        font-size: 1.5em;
+    }
 
-        footer .contact {
-          margin-bottom: 0;
-        }
+    aside .form-description p {
+        width: 80%;
+    }
 
-        footer .copyright {
-          width: 100%;
-        }
+    aside .content-wrapper .form-description,
+    aside .content-wrapper .form {
+        width: 70%;
+        margin: 0;
+    }
 
-        /* home // hero */
-        .hero h1 {
-            width: 70%;
-            font-size: 2.5em;
-            line-height: 1.1em;
-        }
+/* TABLET // home // features */
+    .features h2 {
+        font-size: 2.2em;
+    }
 
-        /* home // aside form */
-        aside .content-wrapper {
-          margin: 40px 0;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-        }
+    .features-items article {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+        flex-basis: 50%;
+    }
 
-        aside .content-wrapper .form-description,
-        aside .content-wrapper .form {
-            width: 45%;
-            margin: 0;
-        }
+    .features-items-text {
+        width: 70%;
+    }
 
-        /* home // features */
-        .features-items article {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-flow: column wrap;
-            flex-basis: 50%;
-        }
+/* TABLET // home // reviews */
+    .reviews .review-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-        .features-items-text {
-            width: 50%;
-        }
+    .reviews h2 {
+        margin-bottom: 20px;
+        width: 70%;
+    }
 
-        /* home // reviews */
-        .reviews .review-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+    .review-text h3 {
+        font-size: 1.25em;
+        width: 70%;
+    }
 
-        .reviews h1 {
-            margin: 0 0 20px 0;
-            width: 70%;
-        }
+    .review-text {
+        width: 60%;
+        margin-left: 20px
+    }
 
-        .reviews h2 {
-            margin: 0 20px 15px 0;
-        }
+    .reviews figure {
+        width: 55%;
+    }
 
-        .review-text {
-            width: 60%;
-            margin-left: 20px;
-        }
+/* TABLET // about // mission */
+    .mission {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-flow: row wrap;
+    }
 
-        .reviews figure {
-            width: 50%;
-        }
+    .mission-content {
+        display: flex;
+        justify-content: space-between;
+    }
 
-        /* about // mission */
-        .mission {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            flex-flow: row wrap;
-        }
+    .mission-content p {
+        margin: 0;
+        width: 47%;
+    }
 
-        .mission-content {
-            display: flex;
-            justify-content: space-between;
-        }
+/* TABLET // about // map */
+    .map figure {
+        width: 100%;
+        height: 0;
+        padding-bottom: 45%;
+        overflow: hidden;
+        position: relative;
+    }
 
-        .mission-content p {
-            margin: 0;
-            width: 47%;
-        }
+/* TABLET // about // contact */
+    .contact-section .about-contact {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+        width: 90%;
+    }
 
-        /* about // map */
-        .map figure {
-            width: 100%;
-            height: 0;
-            padding-bottom: 45%;
-            overflow: hidden;
-            position: relative;
-        }
+/* TABLET // faq */
+    .faq .content-wrapper {
+        justify-content: space-between;
+      }
 
-        /* about // contact */
-        .contact-section .about-contact {
-            display: flex;
-            justify-content: space-between;
-            flex-flow: row wrap;
-            width: 90%;
-        }
+    .faq-content {
+        flex-basis: 45%;
+        flex-flow: row wrap;
+    }
 
-        /* faq // contact */
-        .faq .content-wrapper {
-            justify-content: space-between;
-          }
+    .faq h3 {
+        width: 100%;
+        font-size: .9em;
+    }
 
-        .faq-content {
-            width: 50%;
-            flex-wrap: row wrap;
-        }
+    .faq p {
+        font-size: .8em;
+    }
 
-        .faq h2 {
-            width: 100%;
-        }
+/* TABLET // global // footer */
+    footer .content-wrapper {
+        width: 75%;
+        margin: 50px 0;
+    }
 
-/* close tablet settings */
-}
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: row wrap;
+    }
 
-/* DESKTOP STYLES */
+    footer h3 {
+        font-size: 1.5em;
+    }
+
+    footer .social {
+        width: 45%;
+    }
+
+    footer .contact {
+        margin-bottom: 0;
+    }
+
+    footer .copyright {
+        width: 100%;
+        font-size: 1em;
+    }
+
+/* ==========================================================================
+  JMC :: DESKTOP
+  ========================================================================== */
 
 @media only screen and (min-width: 1200px) {
-        .content-wrapper {
-            max-width: 1000px;
-        }
 
-        .hero h1 {
-            width: 55%;
-        }
+/* DESKTOP // global styles */
+    .content-wrapper {
+        max-width: 900px;
+    }
 
-        aside .content-wrapper {
-            justify-content: space-around;
-        }
+/* DESKTOP // global // header */
+    header nav {
+        width: 25%;
+    }
 
-        aside .content-wrapper .form-description
-        aside .content-wrapper .form {
-            width: 40%;
-        }
+/* DESKTOP // home // hero */
+    .hero h1 {
+        width: 70%;
+        font-size: 3.25em;
+        font-weight: 300;
+    }
 
-        .features h2 {
-            width: 90%;
-        }
+/* DESKTOP // home // aside form */
+    aside .content-wrapper {
+        justify-content: space-around;
+    }
 
-        .features article {
-            flex-basis: 33%;
-        }
+    aside .content-wrapper .form-description
+    aside .content-wrapper .form {
+        width: 40%;
+    }
 
-        .review-content {
-            padding-top: 25px;
-        }
+    aside .form h3 {
+        font-size: 1.75em;
+        margin-bottom: 10px;
+    }
 
-        .review-text {
-            margin-bottom: auto;
-            margin-left: 30px;
-        }
+    aside .form-description {
+        width: 70%;
+    }
 
-        .review-text h2 {
-            font-size: 1.5em;
-        }
+    aside .form-description h3 {
+        font-size: 1.75em;
+        margin: 0 0 20px 0;
+    }
 
-        .review-text p {
-            width: 80%;
-            font-size: 1.2em;
-            margin: 0;
-        }
+    aside .form-description p {
+        font-size: 1.25em;
+    }
 
-        .mission h1 {
-            width: 90%;
-        }
+/* DESKTOP // home // features */
+    .features h2 {
+        width: 90%;
+    }
 
-        /* about // map */
-        .map figure {
-            width: 100%;
-            height: 0;
-            padding-bottom: 37%;
-            overflow: hidden;
-            position: relative;
-        }
+    .features article {
+        flex-basis: 30%;
+    }
 
-        .mission .mission-content {
-            width: 90%;
-        }
+    .review-content {
+        padding-top: 25px;
+    }
 
-        .faq h1 {
-            width: 100%;
-        }
+/* DESKTOP // home // reviews */
+    .review-text {
+        margin-bottom: auto;
+        margin-left: 30px;
+    }
 
-        footer .social {
-          width: 20%;
+    .review-text h2 {
+        font-size: 1.5em;
+    }
 
-        }
+    .review-text h3 {
+        font-size: 1.7em;
+    }
+
+    .review-text p {
+        width: 100%;
+        font-size: 1.2em;
+        margin: 0;
+    }
+
+/* DESKTOP // about // mission */
+    .mission h2 {
+        font-size: 2.95em;
+    }
+
+    .mission p {
+        font-size: 1.2em;
+    }
+
+    .mission .content-wrapper {
+        margin: 40px 0 50px 0;
+    }
+
+/* DESKTOP // about // map */
+    .map figure {
+        width: 100%;
+        height: 0;
+        padding-bottom: 37%;
+        overflow: hidden;
+        position: relative;
+    }
+
+/* DESKTOP // about // contact */
+    .contact-section h2 {
+        font-size: 2.95em;
+        margin: 0;
+    }
+
+    .contact-section h3 {
+        font-size: 2em;
+    }
+
+    .contact-section p {
+        font-size: 1.2em;
+        margin-top: 10px
+    }
+
+/* DESKTOP // faq */
+    .faq h1 {
+        width: 100%;
+    }
+
+/* DESKTOP // global // footer */
+    footer .content-wrapper {
+        width: 65%;
+    }
+
+    footer .social {
+        width: 30%;
+    }
+
+    footer h3 {
+        font-size: 1.75em;
+    }
+
+    footer p {
+        font-size: 1.25em;
+    }
+
+    footer .copyright {
+        width: 100%;
+    }
+
+    footer .copyright p {
+        width: 100%;
+        font-size: 1.2em;
+    }
 
 
 }
+/* ==========================================================================
+  JMC :: END MEDIA QUERIES
+=================================================================== */
+
+
+
+
 
 /* ==========================================================================
    BOILERPLATE :: PRINT STYLES
